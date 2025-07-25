@@ -1,0 +1,45 @@
+.header {
+  padding: 5px 10px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  height: 30px;
+  width: 35px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(32, 32, 36);
+}
+
+.menuLine {
+  border: 1px solid var(--foreground);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.indLinks,
+.linkSeparator {
+  margin-left: 20px;
+}
+
+.linkSeparator {
+  border: 1px solid var(--foreground);
+  height: 20px;
+}
+
+.indLinks button {
+  background-color: rgb(32, 32, 36);
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+}
