@@ -1,0 +1,29 @@
+.banner {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.crest {
+  width: 200px;
+  height: auto;
+  margin: 0 0 20px;
+}
+
+.headshot {
+  width: 200px;
+  height: auto;
+  border-radius: 5px 60px 30px 10px;
+  margin-bottom: 10px;
+}
+
+.bannerContent h1 {
+  margin-bottom: 30px;
+}
+
+.bannerContent p {
+  width: 40%;
+  margin: auto;
+}

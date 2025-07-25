@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 1400px;
-  margin: 40px auto 40px;
+  margin: 10px auto 40px;
 }
 
 /* Enable hover only on non-touch devices */
