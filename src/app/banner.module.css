@@ -23,27 +23,19 @@
 .rightContainer {
   border: 1px solid red;
   width: 50%;
+  overflow: visible;
 }
 
 .bannerBackgroundNetwork {
-  width: 100%;
-  height: auto;
-  position: fixed;
-  left: 35%;
-  top: -100px;
+  position: absolute;
+  left: 40%;
+  top: 5px;
   width: auto;
   height: 1000px;
   z-index: -10;
 }
 
-.headshot {
-  width: 200px;
-  height: auto;
-  border-radius: 5px 60px 30px 10px;
-  margin-bottom: 10px;
-}
-
-.bannerContent h1 {
+.leftContainer h1 {
   margin-bottom: 30px;
 }
 

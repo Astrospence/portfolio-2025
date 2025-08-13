@@ -1,19 +1,15 @@
 .header {
-  padding: 0 10px;
+  padding: 20px 30px;
   margin: auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
+  background-color: #0a0a0a8a;
 }
 
 .headerLeft {
   display: flex;
   gap: 20px;
-}
-
-.crest {
-  width: 75px;
-  height: auto;
 }
 
 .menu {

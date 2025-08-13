@@ -1,14 +1,9 @@
 import styles from './header.module.css'
-import Image from 'next/image'
-import WoodCrest from '../../public/woodCrest.png'
 
 export default function Header () {
   return (
     <div className={styles.header}>
       <div className={styles.headerLeft}>
-        <div className={styles.crestContainer}>
-          <Image className={styles.crest} src={WoodCrest} alt='wood family crest' />
-        </div>
         <div className={styles.menu}>
           <div className={styles.menuLine}></div>
           <div className={styles.menuLine}></div>
