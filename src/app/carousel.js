@@ -27,6 +27,7 @@ export default function Carousel () {
 
   return (
     <div className={styles.carouselContainer}>
+      <h3>Acquired Skills</h3>
       <div className={styles.carouselOverlay}></div>
       <div className={styles.carouselTrack}>
         {
