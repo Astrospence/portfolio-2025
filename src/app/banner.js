@@ -1,7 +1,5 @@
 'use client'
 import styles from './banner.module.css'
-import Image from 'next/image'
-import Network from '../../public/network2.png'
 import Slider from './slider'
 
 export default function Banner () {
@@ -15,7 +13,6 @@ export default function Banner () {
         </div>
         <div className={styles.rightContainer}>
           <Slider />
-          <Image className={styles.bannerBackgroundNetwork} src={Network} alt='vector of globe with dotted arrows orbiting it in varying directions' />
         </div>
       </div>
     </div>

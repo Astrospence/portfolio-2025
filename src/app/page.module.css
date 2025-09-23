@@ -5,3 +5,12 @@
   max-width: 1400px;
   margin: 0 auto 40px;
 }
+
+.bannerBackgroundNetwork {
+  position: absolute;
+  left: 38%;
+  top: 0; /*initializing at top*/
+  width: auto;
+  height: 1000px;
+  z-index: -10;
+}
