@@ -1,0 +1,43 @@
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 60px 0;
+}
+
+.carouselTrack {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+  animation: scroll-left 45s linear infinite;
+}
+
+.carouselOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #000000 0%, #00000000 15%, #00000000 85%, #000000 100%);
+  z-index: 10;
+}
+
+.skill {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  font-size: 25px;
+  text-align: center;
+  background-color: var(--tileBackground);
+  padding: 20px 0;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

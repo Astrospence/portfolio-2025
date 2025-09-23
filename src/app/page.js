@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Header from './header'
 import Banner from './banner'
+import Carousel from "./carousel";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <Banner />
+        <Carousel />
       </main>
       <footer className={styles.footer}>
         

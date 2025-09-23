@@ -24,6 +24,10 @@
   overflow: visible;
 }
 
+.rightContainer p {
+  margin-bottom: 20px;
+}
+
 .bannerBackgroundNetwork {
   position: absolute;
   left: 40%;
