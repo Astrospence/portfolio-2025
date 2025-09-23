@@ -15,7 +15,7 @@ export default function Banner () {
         </div>
         <div className={styles.rightContainer}>
           <Slider />
-          <Image className={styles.bannerBackgroundNetwork} src={Network} alt='vector of globe with dotted arrows orbiting' />
+          <Image className={styles.bannerBackgroundNetwork} src={Network} alt='vector of globe with dotted arrows orbiting it in varying directions' />
         </div>
       </div>
     </div>

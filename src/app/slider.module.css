@@ -1,21 +1,22 @@
 .slider {
-  width: 100%;
-  max-width: 500px;
+  width: 90%;
   margin: 40px auto;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  background-color: #1c1c24;
+  background-color: var(--tileBackground);
 }
 
 .slider:hover {
-  box-shadow: 0 0 10px 3px #00FFD9;
+  background-color: var(--tileHover);
+  transition: all 0.3s;
 }
 
 .slidesContainer {
   display: flex;
   transition: transform 0.4s ease-in-out;
   width: 100%;
+  border-radius: 10px;
 }
 
 .slide {
@@ -26,8 +27,17 @@
   align-items: center;
   justify-content: center;
   color: #eeeeee;
-  padding: 20px;
+  padding: 40px 20px 20px;
   cursor: pointer;
+}
+
+.slide h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.slide p {
+  width: 50%;
 }
 
 .dots {

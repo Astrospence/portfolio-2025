@@ -3,14 +3,14 @@ import { useSwipeable } from 'react-swipeable'
 import styles from './slider.module.css'
 
 const slides = [
-  {id: Math.random(), title: 'Tic Tac Toe', description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js'},
+  {id: Math.random(), title: 'Tic Tac Toe', description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js.'},
   {id: Math.random(), title: 'Marketing Site', description: 'A content-heavy marketing site, built with Webflow, as well as JavaScript, React, Gatsby, Contentful, and more.'},
 ]
 
 export default function Slider () {
   const [current, setCurrent] = useState(0)
   const slideInterval = useRef(null)
-  const delay = 5000
+  const delay = 7000
 
   const goToSlide = (index) => {
     setCurrent(index)
@@ -56,8 +56,9 @@ export default function Slider () {
       <div className={styles.slidesContainer} style={{ transform: `translateX(-${current * 100}%)` }}>
         {slides.map((slide, index) => (
           <div className={styles.slide} key={slide.id}>
-            <h2>{slide.title}</h2>
+            <h3>{slide.title}</h3>
             <p>{slide.description}</p>
+            <p>Click to Explore!</p>
           </div>
         ))}
       </div>

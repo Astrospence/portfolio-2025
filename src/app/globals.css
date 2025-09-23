@@ -1,13 +1,8 @@
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ededed;
+  --tileBackground: #1c1c24;
+  --tileHover: #2f2f3d;
 }
 
 html,
@@ -33,10 +28,20 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--tileBackground);
+  color: var(--foreground);
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: var(--tileHover);
 }
