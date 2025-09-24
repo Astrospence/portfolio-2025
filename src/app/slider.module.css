@@ -5,11 +5,24 @@
   position: relative;
   border-radius: 20px;
   background-color: var(--tileBackground);
+  transition: all 0.3s;
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slider:hover {
   background-color: var(--tileHover);
-  transition: all 0.3s;
 }
 
 .slidesContainer {
@@ -29,6 +42,83 @@
   color: #eeeeee;
   padding: 40px 20px 20px;
   cursor: pointer;
+  position: relative;
+}
+
+.rocket1,
+.rocket2,
+.rocket3,
+.animate1,
+.animate2,
+.animate3 {
+  position: absolute;
+  z-index: -10;
+}
+
+.rocket1 {
+  height: 500px;
+  top: 20px;
+  left: -320px;
+}
+
+.rocket2 {
+  height: 200px;
+  top: 220px;
+  left: -150px;
+}
+
+.rocket3 {
+  height: 350px;
+  top: 100px;
+  left: 120px;
+}
+
+.animate1 {
+  animation: takeoff1 1s ease-in-out forwards;
+  height: 500px;
+  top: 20px;
+  left: -320px;
+}
+
+.animate2 {
+  animation: takeoff2 1s ease-in-out forwards;
+  height: 200px;
+  top: 220px;
+  left: -150px;
+}
+
+.animate3 {
+  animation: takeoff3 1s ease-in-out forwards;
+  height: 350px;
+  top: 100px;
+  left: 120px;
+}
+
+@keyframes takeoff1 {
+  from {
+    transform: translate(-225px, 300px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes takeoff2 {
+  from {
+    transform: translate(-80px, 100px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes takeoff3 {
+  from {
+    transform: translate(-125px, 200px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 .slide h3 {
@@ -45,13 +135,16 @@
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+  position: relative;
+  z-index: 10;
 }
 
 .dot {
   height: 15px;
   width: 15px;
   margin: 0 5px;
-  background-color: #545564;
+  background-color: #272733ff;
+  border: 1px solid #00FFD9;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;

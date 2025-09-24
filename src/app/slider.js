@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import styles from './slider.module.css'
+import Image from 'next/image'
+import grayRocket from '../../public/grayRocket.svg'
 
 const slides = [
   {id: Math.random(), title: 'Tic Tac Toe', description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js.'},
@@ -9,28 +11,41 @@ const slides = [
 
 export default function Slider () {
   const [current, setCurrent] = useState(0)
+  const [shouldAnimate, setShouldAnimate] = useState(false)
+  const animationRef = useRef()
   const slideInterval = useRef(null)
   const delay = 7000
 
   const goToSlide = (index) => {
     setCurrent(index)
+    triggerAnimation()
   }
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % slides.length)
   }
 
+  const triggerAnimation = () => {
+    setShouldAnimate(true)
+    setTimeout(() => {
+     setShouldAnimate(false)
+    }, 1000)
+  }
+
   useEffect(() => {
     startAutoPlay()
+    triggerAnimation()
     return () => stopAutoPlay()
   }, [])
 
   const startAutoPlay = () => {
     slideInterval.current = setInterval(nextSlide, delay)
+    animationRef.current = setInterval(triggerAnimation, delay)
   }
 
   const stopAutoPlay = () => {
     if (slideInterval.current) clearInterval(slideInterval.current)
+    if (animationRef.current) clearInterval(animationRef.current)
   }
 
   const handlers = useSwipeable({
@@ -54,8 +69,11 @@ export default function Slider () {
       {... handlers}
     >
       <div className={styles.slidesContainer} style={{ transform: `translateX(-${current * 100}%)` }}>
-        {slides.map((slide, index) => (
+        {slides.map((slide) => (
           <div className={styles.slide} key={slide.id}>
+            <Image ref={animationRef} className={shouldAnimate ? styles.animate1 : styles.rocket1} src={grayRocket} alt='rocket blasting off' />
+            <Image ref={animationRef} className={shouldAnimate ? styles.animate2 : styles.rocket2} src={grayRocket} alt='rocket blasting off' />
+            <Image ref={animationRef} className={shouldAnimate ? styles.animate3 : styles.rocket3} src={grayRocket} alt='rocket blasting off' />
             <h3>{slide.title}</h3>
             <p>{slide.description}</p>
             <p>Click to Explore!</p>
