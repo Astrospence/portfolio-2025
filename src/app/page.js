@@ -1,9 +1,10 @@
 'use client'
 import React, { useRef, useEffect } from 'react'
-import styles from "./page.module.css";
+import styles from './page.module.css';
 import Header from './header'
 import Banner from './banner'
-import Carousel from "./carousel";
+import Carousel from './carousel';
+import About from './about'
 import Image from 'next/image'
 import Network from '../../public/network2.png'
 
@@ -30,6 +31,7 @@ export default function Home() {
         <Header />
         <Banner />
         <Carousel />
+        <About />
       </main>
       <footer className={styles.footer}>
         

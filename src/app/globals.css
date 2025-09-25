@@ -3,6 +3,9 @@
   --foreground: #ededed;
   --tileBackground: #1c1c24;
   --tileHover: #272733;
+  --tileDark: #000000e0;
+  --highlightedText: #00FFD9;
+  --highlightedTextHover: #b330ff;
 }
 
 html,
@@ -29,6 +32,10 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+}
+
+p {
+  letter-spacing: 0.8px;
 }
 
 button {
