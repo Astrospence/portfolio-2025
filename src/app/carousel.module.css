@@ -19,8 +19,8 @@
 .carouselTrack {
   display: flex;
   width: max-content;
-  gap: 30px;
-  animation: scroll-left 45s linear infinite;
+  gap: 35px;
+  animation: scroll-left 50s linear infinite;
 }
 
 .carouselOverlay {
@@ -39,6 +39,7 @@
   font-size: 25px;
   text-align: center;
   background-color: var(--tileBackground);
+  border: 3px solid var(--tileHover);
   padding: 20px 0;
   border-radius: 10px;
   pointer-events: none;

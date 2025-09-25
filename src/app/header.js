@@ -12,12 +12,12 @@ export default function Header () {
       </div>
       <div className={styles.nav}>
         <nav className={styles.links}>
-          <a className={styles.indLinks} href=''>Resume</a>
-          <a className={styles.indLinks} href=''>About</a>
-          <a className={styles.indLinks} href=''>Contact</a>
-          <div className={styles.linkSeparator}></div>
+          <a className={styles.indLinks} href='/resume.pdf'>Resume</a>
+          <a className={styles.indLinks} href='#about'>About</a>
+          <a className={styles.indLinks} href='/contact'>Contact</a>
+          {/*<div className={styles.linkSeparator}></div>
           <a className={styles.indLinks}><button>Desktop Components</button></a>
-          <a className={styles.indLinks}><button>Mobile Components</button></a>
+          <a className={styles.indLinks}><button>Mobile Components</button></a>*/}
         </nav>
       </div>
     </div>

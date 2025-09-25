@@ -5,7 +5,7 @@ import headshot from '../../public/SpencerHeadshot.svg'
 
 export default function About () {
   return (
-    <div className={styles.about}>
+    <div id='about' className={styles.about}>
       <div className={styles.aboutLeft}>
         <Image className={styles.headshot} src={headshot} alt='professional headshot of Spencer Wood' />
       </div>

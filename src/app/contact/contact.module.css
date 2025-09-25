@@ -1,0 +1,66 @@
+.heading {
+  text-align: center;
+  margin: 100px auto;
+  padding: 15px 40px;
+  font-size: 52px;
+  background-color: var(--tileDark);
+  border: 3px solid var(--tileHover);
+  border-radius: 10px;
+  width: max-content;
+}
+
+.linkBlock {
+  display: block;
+  width: max-content;
+  margin: auto;
+}
+
+.tile {
+  border: 3px solid var(--tileHover);
+  background-color: var(--tileBackground);
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.tile:hover {
+  background-color: var(--tileHover);
+  cursor: pointer;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.textContainer h3 {
+  font-size: 36px;
+}
+
+.icon {
+  height: 100%;
+  width: auto;
+}
+
+.linkArrow {
+  height: 40px;
+  width: auto;
+}
+
+.emailBackup {
+  width: max-content;
+  margin: -20px auto;
+  padding: 10px 20px;
+  background-color: var(--tileBackground);
+  border: 3px solid var(--tileHover);
+  border-radius: 10px;
+  cursor: text;
+}

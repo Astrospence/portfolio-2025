@@ -33,9 +33,6 @@ export default function Home() {
         <Carousel />
         <About />
       </main>
-      <footer className={styles.footer}>
-        
-      </footer>
     </div>
   );
 }
