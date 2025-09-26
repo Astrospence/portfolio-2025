@@ -57,7 +57,7 @@
 
 .emailBackup {
   width: max-content;
-  margin: -20px auto;
+  margin: -20px auto 0;
   padding: 10px 20px;
   background-color: var(--tileBackground);
   border: 3px solid var(--tileHover);

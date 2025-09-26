@@ -4,20 +4,24 @@ import styles from '.././page.module.css';
 import contactStyles from './contact.module.css'
 import Image from 'next/image'
 import Network from '../../../public/network2.png'
+import Ship from '../../../public/ship.svg'
 import Linkedin from '../../../public/linkedin.png'
 import GitHub from '../../../public/github.svg'
 import Gmail from '../../../public/gmail.png'
 import LinkArrow from '../../../public/LinkArrow.png'
 import FadeInSection from '../fadeInSection'
+import Header from '../header'
 
 export default function Home() {
   const parallaxRef = useRef(0)
+  const parallaxRef2 = useRef(0)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       requestAnimationFrame(() => {
-        parallaxRef.current.style.top = `${scrollTop * 0.5}px`
+        parallaxRef.current.style.top = `${scrollTop * 0.6}px`
+        parallaxRef2.current.style.top = `${(scrollTop * 0.4) + 500}px`
       })
     }
 
@@ -31,12 +35,24 @@ export default function Home() {
       <Image 
         ref={parallaxRef} 
         priority={true} 
-        className={styles.bannerBackgroundNetwork} 
+        className={styles.backgroundGlobe} 
         src={Network} 
         alt='vector of globe with dotted arrows orbiting it in varying directions' 
       />
+
+      <Image 
+        ref={parallaxRef2} 
+        priority={true} 
+        className={styles.backgroundShip} 
+        src={Ship} 
+        alt='vector of globe with dotted arrows orbiting it in varying directions' 
+      />
+
       <main className={styles.main}>
+        <Header />
+
         <h2 className={contactStyles.heading}>Let&apos;s Connect</h2>
+        
         <FadeInSection>
           <a 
             className={contactStyles.linkBlock}
