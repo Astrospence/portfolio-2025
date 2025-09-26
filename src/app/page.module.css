@@ -4,9 +4,11 @@
   justify-content: center;
   max-width: 1400px;
   margin: 40px auto;
+  padding: 0 20px;
+  overflow-y: hidden;
 }
 
-.bannerBackgroundNetwork {
+.backgroundGlobe {
   position: absolute;
   left: 38%;
   top: 0; /*initializing at top*/
@@ -14,5 +16,12 @@
   height: 150vh;
   max-height: 1200px;
   min-height: 800px;
+  z-index: -10;
+}
+
+.backgroundShip {
+  position: absolute;
+  top: 500px;
+  left: 0;
   z-index: -10;
 }

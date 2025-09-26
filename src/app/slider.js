@@ -5,8 +5,16 @@ import Image from 'next/image'
 import grayRocket from '../../public/grayRocket.svg'
 
 const slides = [
-  {id: Math.random(), title: 'Tic Tac Toe', description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js.'},
-  {id: Math.random(), title: 'Marketing Site', description: 'A content-heavy marketing site, built with Webflow, as well as JavaScript, React, Gatsby, Contentful, and more.'},
+  {
+    id: Math.random(), 
+    title: 'Marketing Site', 
+    description: 'A content-heavy marketing site, built with Webflow, as well as JavaScript, React, Gatsby, Contentful, and more.'
+  },
+  {
+    id: Math.random(), 
+    title: 'Tic Tac Toe', 
+    description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js.'
+  },
 ]
 
 export default function Slider () {
@@ -68,6 +76,9 @@ export default function Slider () {
       onMouseLeave={startAutoPlay}
       {... handlers}
     >
+
+      <h3 className={styles.projectsHeading}>PROJECTS</h3>
+
       <div className={styles.slidesContainer} style={{ transform: `translateX(-${current * 100}%)` }}>
         {slides.map((slide) => (
           <div className={styles.slide} key={slide.id}>

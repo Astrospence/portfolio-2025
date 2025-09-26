@@ -29,16 +29,16 @@
 }
 
 .leftContainer h1 {
-  margin-bottom: 30px;
-  font-size: 60px;
+  margin-bottom: 50px;
+  font-size: 64px;
 }
 
 .leftContainer h2 {
-  font-size: 48px;
-  margin: 0 0 15px 30px;
+  font-size: 52px;
+  margin: 0 0 15px 0;
 }
 
 .leftContainer p {
-  width: 40%;
-  margin-left: 35px;
+  width: 300px;
+  margin-left: 10px;
 }

@@ -7,16 +7,19 @@ import Carousel from './carousel';
 import About from './about'
 import Image from 'next/image'
 import Network from '../../public/network2.png'
+import Ship from '../../public/ship.svg'
 import FadeInSection from './fadeInSection'
 
 export default function Home() {
   const parallaxRef = useRef(0)
+  const parallaxRef2 = useRef(0)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       requestAnimationFrame(() => {
-        parallaxRef.current.style.top = `${scrollTop * 0.5}px`
+        parallaxRef.current.style.top = `${scrollTop * 0.6}px`
+        parallaxRef2.current.style.top = `${(scrollTop * 0.4) + 500}px`
       })
     }
 
@@ -27,7 +30,22 @@ export default function Home() {
   
   return (
     <div className={styles.page}>
-      <Image ref={parallaxRef} priority={true} className={styles.bannerBackgroundNetwork} src={Network} alt='vector of globe with dotted arrows orbiting it in varying directions' />
+      <Image 
+        ref={parallaxRef} 
+        priority={true} 
+        className={styles.backgroundGlobe} 
+        src={Network} 
+        alt='vector of globe in the background with dotted arrows orbiting it in varying directions' 
+      />
+
+      <Image 
+        ref={parallaxRef2} 
+        priority={true} 
+        className={styles.backgroundShip} 
+        src={Ship} 
+        alt='vector of rocket floating in the background' 
+      />
+
       <main className={styles.main}>
         <Header />
         
