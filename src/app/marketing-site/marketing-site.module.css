@@ -1,0 +1,44 @@
+.heading {
+  font-size: 48px;
+  text-align: center;
+  width: max-content;
+  margin: 60px auto;
+  background-color: var(--tileDark);
+  padding: 20px 40px;
+  border: 3px solid var(--tileHover);
+  border-radius: 10px;
+}
+
+.description {
+  background-color: var(--tileBackground);
+  padding: 50px 60px;
+  border-radius: 20px;
+  border: 3px solid var(--tileHover);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.button {
+  width: max-content;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid var(--highlightedText);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  border: 2px solid var(--highlightedTextHover);
+}
+
+.link {
+  color: var(--highlightedText);
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: var(--highlightedTextHover);
+}

@@ -11,7 +11,7 @@ const slides = [
     title: 'Marketing Site', 
     description: 'A content-heavy marketing site, built with Webflow, as well as JavaScript, React, Gatsby, Contentful, and more.',
     target: '',
-    href: '',
+    href: '/marketing-site',
     rel: '',
   },
   {
