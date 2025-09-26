@@ -13,12 +13,14 @@ export default function Header () {
       </div>*/}
       <div className={styles.nav}>
         <nav className={styles.links}>
-          <Link
+          {/* The following a tag must be used in place of Link to maintain animation timing control when navigating back to home*/}
+          {/*eslint-disable*/}
+          <a
             className={styles.indLinks}
             href='/'
           >
             Home
-          </Link>
+          </a>
           <div className={styles.linkSeparator}></div>
 
           <Link 
