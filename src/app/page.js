@@ -7,6 +7,7 @@ import Carousel from './carousel';
 import About from './about'
 import Image from 'next/image'
 import Network from '../../public/network2.png'
+import FadeInSection from './fadeInSection'
 
 export default function Home() {
   const parallaxRef = useRef(0)
@@ -29,9 +30,19 @@ export default function Home() {
       <Image ref={parallaxRef} priority={true} className={styles.bannerBackgroundNetwork} src={Network} alt='vector of globe with dotted arrows orbiting it in varying directions' />
       <main className={styles.main}>
         <Header />
-        <Banner />
-        <Carousel />
-        <About />
+        
+        <FadeInSection>
+          <Banner />
+        </FadeInSection>
+
+        <FadeInSection>
+          <Carousel />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <About />
+        </FadeInSection>
+        
       </main>
     </div>
   );
