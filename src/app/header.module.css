@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   background-color: #000000c5;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
 }
 
 .headerLeft {
@@ -30,6 +33,14 @@
 .links {
   display: flex;
   align-items: center;
+}
+
+.indLinks {
+  transition: all 0.3s;
+}
+
+.indLinks:hover {
+  color: var(--highlightedTextHover);
 }
 
 .indLinks,

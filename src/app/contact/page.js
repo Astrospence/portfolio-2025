@@ -8,6 +8,7 @@ import Linkedin from '../../../public/linkedin.png'
 import GitHub from '../../../public/github.svg'
 import Gmail from '../../../public/gmail.png'
 import LinkArrow from '../../../public/LinkArrow.png'
+import FadeInSection from '../fadeInSection'
 
 export default function Home() {
   const parallaxRef = useRef(0)
@@ -36,57 +37,63 @@ export default function Home() {
       />
       <main className={styles.main}>
         <h2 className={contactStyles.heading}>Let&apos;s Connect</h2>
-        <a 
-          className={contactStyles.linkBlock}
-          target='_blank'
-          href='https://www.linkedin.com/in/spencerwooddev'
-          rel='noopener noreferrer'  
-        >
-          <div className={contactStyles.tile}>
-            <Image 
-              className={contactStyles.icon} 
-              src={Linkedin} 
-              alt='Linkedin Icon' 
-            />
-            <div className={contactStyles.textContainer}>
-              <h3>Linkedin <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+        <FadeInSection>
+          <a 
+            className={contactStyles.linkBlock}
+            target='_blank'
+            href='https://www.linkedin.com/in/spencerwooddev'
+            rel='noopener noreferrer'  
+          >
+            <div className={contactStyles.tile}>
+              <Image 
+                className={contactStyles.icon} 
+                src={Linkedin} 
+                alt='Linkedin Icon' 
+              />
+              <div className={contactStyles.textContainer}>
+                <h3>Linkedin <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </FadeInSection>
 
-        <a 
-          className={contactStyles.linkBlock}
-          target='_blank'
-          href='https://github.com/Astrospence'
-          rel='noopener noreferrer'  
-        >
-          <div className={contactStyles.tile}>
-            <Image 
-              className={contactStyles.icon} 
-              src={GitHub} 
-              alt='GitHub Icon' 
-            />
-            <div className={contactStyles.textContainer}>
-              <h3>GitHub <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+        <FadeInSection>
+          <a 
+            className={contactStyles.linkBlock}
+            target='_blank'
+            href='https://github.com/Astrospence'
+            rel='noopener noreferrer'  
+          >
+            <div className={contactStyles.tile}>
+              <Image 
+                className={contactStyles.icon} 
+                src={GitHub} 
+                alt='GitHub Icon' 
+              />
+              <div className={contactStyles.textContainer}>
+                <h3>GitHub <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </FadeInSection>
 
-        <a 
-          className={contactStyles.linkBlock}
-          target='_blank'
-          href='mailto:spencer.wood711@gmail.com?subject=Portfolio%20Contact'
-          rel='noopener noreferrer'
-        >
-          <div className={contactStyles.tile}>
-            <Image className={contactStyles.icon} src={Gmail} alt='Email Icon' />
-            <div className={contactStyles.textContainer}>
-              <h3>Email <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+        <FadeInSection>
+          <a 
+            className={contactStyles.linkBlock}
+            target='_blank'
+            href='mailto:spencer.wood711@gmail.com?subject=Portfolio%20Contact'
+            rel='noopener noreferrer'
+          >
+            <div className={contactStyles.tile}>
+              <Image className={contactStyles.icon} src={Gmail} alt='Email Icon' />
+              <div className={contactStyles.textContainer}>
+                <h3>Email <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <p className={contactStyles.emailBackup}>spencer.wood711@gmail.com</p>
+          <p className={contactStyles.emailBackup}>spencer.wood711@gmail.com</p>
+        </FadeInSection>
 
       </main>
     </div>
