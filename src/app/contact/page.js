@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react'
 import styles from '.././page.module.css';
 import contactStyles from './contact.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import Network from '../../../public/network2.png'
 import Ship from '../../../public/ship.svg'
 import Linkedin from '../../../public/linkedin.png'
@@ -52,9 +53,9 @@ export default function Home() {
         <Header />
 
         <h2 className={contactStyles.heading}>Let&apos;s Connect</h2>
-        
+
         <FadeInSection>
-          <a 
+          <Link 
             className={contactStyles.linkBlock}
             target='_blank'
             href='https://www.linkedin.com/in/spencerwooddev'
@@ -70,11 +71,11 @@ export default function Home() {
                 <h3>Linkedin <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
               </div>
             </div>
-          </a>
+          </Link>
         </FadeInSection>
 
         <FadeInSection>
-          <a 
+          <Link 
             className={contactStyles.linkBlock}
             target='_blank'
             href='https://github.com/Astrospence'
@@ -90,11 +91,11 @@ export default function Home() {
                 <h3>GitHub <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
               </div>
             </div>
-          </a>
+          </Link>
         </FadeInSection>
 
         <FadeInSection>
-          <a 
+          <Link 
             className={contactStyles.linkBlock}
             target='_blank'
             href='mailto:spencer.wood711@gmail.com?subject=Portfolio%20Contact'
@@ -106,7 +107,7 @@ export default function Home() {
                 <h3>Email <span><Image className={contactStyles.linkArrow} src={LinkArrow} alt='Icon of an arrow leaving a page' /></span></h3>
               </div>
             </div>
-          </a>
+          </Link>
 
           <p className={contactStyles.emailBackup}>spencer.wood711@gmail.com</p>
         </FadeInSection>

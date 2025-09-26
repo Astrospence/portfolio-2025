@@ -1,4 +1,5 @@
 import styles from './header.module.css'
+import Link from 'next/link'
 
 export default function Header () {
   return (
@@ -12,12 +13,40 @@ export default function Header () {
       </div>*/}
       <div className={styles.nav}>
         <nav className={styles.links}>
-          <a className={styles.indLinks} href='/resume.pdf'>Resume</a>
-          <a className={styles.indLinks} href='#about'>About</a>
-          <a className={styles.indLinks} href='/contact'>Contact</a>
-          {/*<div className={styles.linkSeparator}></div>
+          <Link
+            className={styles.indLinks}
+            href='/'
+          >
+            Home
+          </Link>
+          <div className={styles.linkSeparator}></div>
+
+          <Link 
+            className={styles.indLinks} 
+            href='/resume.pdf'
+            target='_blank'  
+          >
+            Resume
+          </Link>
+
+          <Link 
+            className={styles.indLinks} 
+            href='/#about'  
+          >
+            About
+          </Link>
+
+          <Link 
+            className={styles.indLinks} 
+            href='/contact'
+          >
+            Contact
+          </Link>
+
+          {/*
           <a className={styles.indLinks}><button>Desktop Components</button></a>
-          <a className={styles.indLinks}><button>Mobile Components</button></a>*/}
+          <a className={styles.indLinks}><button>Mobile Components</button></a>
+          */}
         </nav>
       </div>
     </div>

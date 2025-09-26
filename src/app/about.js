@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './about.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import headshot from '../../public/SpencerHeadshot.svg'
 
 export default function About () {
@@ -13,7 +14,7 @@ export default function About () {
         <h3 className={styles.aboutHeading}>About Spencer</h3>
         <p className={styles.aboutBody}>I am a Web Developer passionate about tackling challenges and continuous growth. My skills enable me to perform well as a Front End, Back End, or Full Stack Developer. My professional history proves that I can learn just about anything and I become proficient very quickly. I continuosly use this skill of learning to improve myself as a Developer and to offer more for my clients.</p>
 
-        <p className={styles.aboutBody}>As a graduate from Bloom Institute of Technology (formerly known as Lambda School), and with my years of work experience as a Full Stack Web Developer, I am confident that I can deliver quality web solutions. Feel free to check out my <span className={styles.highlighted}><a>Resume</a></span> or my growing <span className={styles.highlighted}><a>Portfolio.</a></span></p>
+        <p className={styles.aboutBody}>As a graduate from Bloom Institute of Technology (formerly known as Lambda School), and with my years of work experience as a Full Stack Web Developer, I am confident that I can deliver quality web solutions. Feel free to check out my <span className={styles.highlighted}><Link href='/resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</Link></span> or my growing Portfolio here on this site.</p>
       </div>
     </div>
   )
