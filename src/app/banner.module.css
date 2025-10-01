@@ -31,12 +31,16 @@
 .leftContainer h1 {
   margin-bottom: 30px;
   font-size: 64px;
+  background-color: var(--tileDark);
+  border-radius: 20px;
+  padding: 10px 15px 5px;
+  margin-left: -15px;
 }
 
 .namePlate {
   background-color: var(--tileDark);
   width: max-content;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px 15px 5px;
   margin-left: -15px;
 }

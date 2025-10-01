@@ -6,7 +6,7 @@
   border: 3px solid var(--tileHover);
   background-color: var(--tileDark);
   width: 90%;
-  margin: 0 auto 1000px;
+  margin: 0 auto;
 }
 
 .aboutLeft {
@@ -40,4 +40,30 @@
 
 .highlighted:hover {
   color: var(--highlightedTextHover)
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .aboutLeft,
+  .aboutRight {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  .aboutLeft {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .aboutLeft,
+  .aboutRight {
+    width: 300px;
+    font-size: 14px;
+  }
+  .aboutLeft {
+    margin-top: 30px;
+  }
 }
