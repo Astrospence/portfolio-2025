@@ -29,8 +29,16 @@
 }
 
 .leftContainer h1 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 64px;
+}
+
+.namePlate {
+  background-color: var(--tileDark);
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px 15px 5px;
+  margin-left: -15px;
 }
 
 .leftContainer h2 {
@@ -41,4 +49,48 @@
 .leftContainer p {
   width: 300px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .leftContainer {
+    width: 40%;
+  }
+  .rightContainer {
+    width: 60%;
+  }
+  .leftContainer h1 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bannerContent {
+    flex-direction: column;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+  .leftContainer h1 {
+    font-size: 64px;
+  }
+  .namePlate {
+    margin: auto;
+  }
+  .leftContainer p {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+  }
+  .leftContainer h1 {
+    font-size: 50px;
+  }
 }

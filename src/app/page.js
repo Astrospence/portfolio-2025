@@ -6,8 +6,9 @@ import Banner from './banner'
 import Carousel from './carousel';
 import About from './about'
 import Image from 'next/image'
-import Network from '../../public/network2.png'
-import Ship from '../../public/ship.svg'
+import Globe from '../../public/network2.svg'
+import Moon from '../../public/moon.svg'
+import Sun from '../../public/sun.svg'
 import FadeInSection from './fadeInSection'
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       const scrollTop = window.scrollY
       requestAnimationFrame(() => {
         parallaxRef.current.style.top = `${scrollTop * 0.6}px`
-        parallaxRef2.current.style.top = `${(scrollTop * 0.4) + 500}px`
+        parallaxRef2.current.style.top = `${(scrollTop * 0.4) + 520}px`
       })
     }
 
@@ -34,16 +35,23 @@ export default function Home() {
         ref={parallaxRef} 
         priority={true} 
         className={styles.backgroundGlobe} 
-        src={Network} 
-        alt='vector of globe in the background with dotted arrows orbiting it in varying directions' 
+        src={Globe} 
+        alt='vector outline of globe in the background with dotted arrows orbiting it in varying directions' 
       />
 
       <Image 
         ref={parallaxRef2} 
         priority={true} 
-        className={styles.backgroundShip} 
-        src={Ship} 
-        alt='vector of rocket floating in the background' 
+        className={styles.backgroundMoon} 
+        src={Moon} 
+        alt='vector outline of moon floating in the background' 
+      />
+
+      <Image  
+        priority={true} 
+        className={styles.backgroundSun} 
+        src={Sun} 
+        alt='vector outline of sun fixed in the top left corner background' 
       />
 
       <main className={styles.main}>
