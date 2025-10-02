@@ -5,8 +5,8 @@
   max-width: 1400px;
   width: 100%;
   margin: 40px auto;
-  padding: 20px 0 200px;
-  overflow: visible;
+  padding: 20px 0 100px;
+  overflow-x: visible;
   position: relative;
 }
 

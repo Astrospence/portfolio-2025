@@ -120,7 +120,6 @@ export default function Home() {
           <p className={contactStyles.emailBackup}>spencer.wood711@gmail.com</p>
         </FadeInSection>
 
-        <div style={{marginBottom: '350px'}}></div>
       </main>
     </div>
   );

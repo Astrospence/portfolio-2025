@@ -20,6 +20,7 @@ const skills = [
   'PostgreSQL',
   'RESTful APIs',
   'Contentful',
+  'CI/CD',
 ]
 
 export default function Carousel () {

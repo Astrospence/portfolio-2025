@@ -57,7 +57,27 @@ export default function Home() {
         <Header />
 
         <FadeInSection>
-          <h2 className={thisPageStyles.heading}>Marketing Site</h2>
+          <div className={thisPageStyles.projectNav}>
+            <Link
+              className={thisPageStyles.prev}
+              href=''
+              style={{
+                opacity: '0',
+                pointerEvents: 'none'
+              }}
+            >
+              Prev
+            </Link>
+
+            <h2 className={thisPageStyles.heading}>Marketing Site</h2>
+
+            <Link
+              className={thisPageStyles.next}
+              href='/tic-tac-toe'
+            >
+              Next
+            </Link>
+          </div>
 
           <div className={thisPageStyles.description}>
             <Link
