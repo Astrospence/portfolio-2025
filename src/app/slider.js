@@ -19,7 +19,7 @@ const slides = [
     title: 'Tic Tac Toe', 
     description: 'A playable Tic Tac Toe game, built with JavaScript, React, and Next.js.',
     target: '_blank',
-    href: 'https://tic-tac-toe-react-ez58fa1g5-spencerwooddevs-projects.vercel.app/',
+    href: '/tic-tac-toe',
     rel: 'noopener noreferrer',
   },
 ]
