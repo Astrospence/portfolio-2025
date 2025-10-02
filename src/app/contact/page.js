@@ -10,7 +10,7 @@ import Sun from '../../../public/sun.svg'
 import Linkedin from '../../../public/linkedin.png'
 import GitHub from '../../../public/github.svg'
 import Gmail from '../../../public/gmail.png'
-import LinkArrow from '../../../public/LinkArrow.png'
+import LinkArrow from '../../../public/linkArrow.png'
 import FadeInSection from '../fadeInSection'
 import Header from '../header'
 
