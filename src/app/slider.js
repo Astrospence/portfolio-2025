@@ -39,16 +39,20 @@ export default function Slider () {
   const nextSlide = () => {
     if (current >= (slides.length - 1)) {
       setCurrent(0)
+      triggerAnimation()
     } else {
       setCurrent((prev) => (prev + 1))
+      triggerAnimation()
     }
   }
 
   const prevSlide = () => {
     if (current === 0) {
       setCurrent(slides.length - 1)
+      triggerAnimation()
     } else {
       setCurrent((prev) => (prev - 1))
+      triggerAnimation()
     }
   }
 
