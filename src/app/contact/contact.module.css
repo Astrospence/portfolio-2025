@@ -68,12 +68,16 @@
 @media screen and (max-width: 700px) {
   .heading {
     margin-bottom: 60px;
+    font-size: 48px;
   }
   .tile {
-    width: 400px;
+    width: 350px;
     height: 150px;
   }
   .textContainer h3 {
     font-size: 32px;
+  }
+  .linkArrow {
+    height: 25px;
   }
 }
