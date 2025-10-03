@@ -56,3 +56,10 @@
   border: none;
   border-radius: 5px;
 }
+
+@media screen and (min-width: 1400px) {
+  .header {
+    left: 70%;
+    right: auto;
+  }
+}

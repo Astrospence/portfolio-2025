@@ -82,7 +82,7 @@ export default function Home() {
           <div className={thisPageStyles.description}>
             <Link
               className={thisPageStyles.button}
-              href='https://tic-tac-toe-react-ez58fa1g5-spencerwooddevs-projects.vercel.app'
+              href='https://tic-tac-toe-react-app-xi.vercel.app/'
               target='_blank'
               rel='noopener noreferrer'
             >

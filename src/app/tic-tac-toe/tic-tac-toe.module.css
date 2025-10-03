@@ -86,4 +86,8 @@
     right: 20px;
     font-size: 20px;
   }
+  .description {
+    padding: 30px 30px;
+    gap: 0;
+  }
 }
