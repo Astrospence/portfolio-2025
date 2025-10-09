@@ -90,4 +90,7 @@
     padding: 30px 30px;
     gap: 0;
   }
+  .button {
+    margin: 10px auto 40px;
+  }
 }
