@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef, useEffect } from 'react'
 import styles from '../cssFiles/page.module.css';
-import thisPageStyles from '../cssFiles/tic-tac-toe.module.css'
+import thisPageStyles from '../cssFiles/projects.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import Globe from '../../../public/network2.svg'
@@ -89,12 +89,12 @@ export default function Home() {
               View The Project
             </Link>
             
-            <p>I accepted a small challenge to build a Tic Tac Toe game with React and JavaScript, built with the Next.js framework. It was an entertaining project, and it showcases my ability to work well with complex JavaScript logic and to build visually appealing interactive UI components with React. Here are some features about this game:</p>
+            <p>I accepted a challenge to build a Tic Tac Toe game with React and JavaScript, built with the Next.js framework. It was an entertaining project, and it showcases my ability to work well with complex JavaScript logic and to build visually appealing interactive UI components with React. Here are some features about this game:</p>
 
             <ul>
-              <li>It tracks which player&apos;s turn it is and provides a visual.</li>
-              <li>It tracks all selections made by both players.</li>
-              <li>When a selection is made, it checks the player&apos;s selections against a list of possible win scenarios and triggers a winning animation when it comes back positive.</li>
+              <li>Player turn tracking and visual</li>
+              <li>Individual player selection tracking</li>
+              <li>When a selection is made, it compares the player&apos;s selections against a list of possible win scenarios and triggers a winning animation when it comes back positive.</li>
             </ul>
 
           </div>

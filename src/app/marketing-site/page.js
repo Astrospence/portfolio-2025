@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef, useEffect } from 'react'
 import styles from '../cssFiles/page.module.css';
-import thisPageStyles from '../cssFiles/marketing-site.module.css'
+import thisPageStyles from '../cssFiles/projects.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import Globe from '../../../public/network2.svg'
