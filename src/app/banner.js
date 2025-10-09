@@ -1,5 +1,5 @@
 'use client'
-import styles from './banner.module.css'
+import styles from './cssFiles/banner.module.css'
 import Slider from './slider'
 
 export default function Banner () {

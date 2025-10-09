@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
-import styles from './fadeInSection.module.css'
+import styles from './cssFiles/fadeInSection.module.css'
 
 export default function FadeInSection({ children }) {
   const ref = useRef(null);

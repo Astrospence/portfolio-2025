@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './carousel.module.css'
+import styles from './cssFiles/carousel.module.css'
 
 const skills = [
   'Webflow',

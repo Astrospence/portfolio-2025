@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import styles from './slider.module.css'
+import styles from './cssFiles/slider.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import grayRocket from '../../public/grayRocket.svg'

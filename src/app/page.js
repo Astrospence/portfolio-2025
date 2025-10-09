@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef, useEffect } from 'react'
-import styles from './page.module.css';
+import styles from './cssFiles/page.module.css';
 import Header from './header'
 import Banner from './banner'
 import Carousel from './carousel';
