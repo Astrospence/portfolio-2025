@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import styles from '../cssFiles/page.module.css';
 import thisPageStyles from '../cssFiles/projects.module.css'
 import Image from 'next/image'
@@ -13,6 +13,8 @@ import Header from '../header'
 export default function Home() {
   const parallaxRef = useRef(0)
   const parallaxRef2 = useRef(0)
+  // Listen for tall screens
+  const [isTall, setIsTall] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +26,18 @@ export default function Home() {
     }
 
     window.addEventListener('scroll', handleScroll)
-
+    
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.innerHeight > 850 ? setIsTall(true) : setIsTall(false)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
   
   return (
@@ -99,6 +111,11 @@ export default function Home() {
 
           </div>
         </FadeInSection>
+
+        {/* Spacer for large screens because this page has little content */}
+        {
+          isTall ? <div style={{height: '400px'}}></div> : ''
+        }
 
       </main>
     </div>
