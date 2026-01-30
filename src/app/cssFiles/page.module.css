@@ -1,9 +1,10 @@
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1400px;
   width: 100%;
+  min-height: 100vh;
   margin: 40px auto;
   padding: 20px 0 100px;
   overflow-x: visible;

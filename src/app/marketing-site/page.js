@@ -89,16 +89,16 @@ export default function Home() {
               View The Site
             </Link>
             
-            <p>As a former Full Stack Web Developer for Entrata, I was one of the founding architects for their modern Marketing Site that launched in early 2023. It was built to be highly scalable and flexible, allowing marketing users to create and maintain any number of customized web pages with a quick turn-around. It was also large and content-heavy. This was a massive undertaking which involved a wide variety of tasks. Some of my key contributions are listed as follows:</p>
+            <p>As a former Full Stack Web Developer for Entrata, I was one of the founding architects for their modern marketing site that launched in early 2023. It was built to be highly scalable and flexible, allowing marketing users to create and maintain any number of customized web pages with a quick turn-around. It was also large and content-heavy. This was a massive undertaking which involved a wide variety of tasks. Some of my key contributions are listed as follows:</p>
 
             <ul>
               <li>I designed the back end system in Contentful, providing an access point for non-technical marketing users to enter and update content for every page on the site, and providing the front end with an API for automatic page generation.</li>
               <li>I trained non-technical staff on the proper use of Contentful to create content.</li>
               <li>I managed git version control with GitHub, and provided training for my team on proper steps to avoid/handle merge conflicts.</li>
-              <li>I helped develop the front end, built with Gatsby, React, JavaScript, and CSS. The front end communicated with the Contentful API to read content according to design and automatically generate wep pages built from our library of custom React components.</li>
+              <li>I helped develop the front end, built with Gatsby, React, JavaScript, and CSS. The front end communicated with the Contentful API to get content and automatically generate wep pages built from our library of custom React components.</li>
               <li>I created new React components or custom pages for the site according to Figma designs received from the design team.</li>
               <li>Using Node.js, I developed a script to communicate with the legacy CMS API and Contentful API to automatically retrieve, modify, and import hundreds of records of legacy site data, all with no data loss.</li>
-              <li>Using GitHub actions, I created and managed webhooks and deployment commands to maintain a Continuous Deployment strategy, which offered content creators a testing environment and deployed production updates during safe times.</li>
+              <li>Using GitHub actions, I created and managed webhooks that maintained a continuous deployment strategy, which offered content creators a testing environment and deployed production updates during safe times.</li>
               <li>I developed custom web applications to fulfill the needs of internal teams.</li>
               <li>I developed integrations as needed for the site.</li>
               <li>I provided continuous support, troubleshooting, and debugging for the site.</li>
